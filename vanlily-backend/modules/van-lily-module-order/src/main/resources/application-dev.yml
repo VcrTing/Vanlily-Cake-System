@@ -1,0 +1,36 @@
+
+server:
+  port: 9091
+
+spring:
+  datasource:
+    url: jdbc:mysql://42.192.15.218:3306/vanlily?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: qiong
+    password: qiong
+  redis:
+    host: 42.192.15.218
+    port: 6379
+  kafka:
+    bootstrap-servers: 42.192.15.218:9092
+    producer:
+      batch-size: 16384
+      retries: 3 # 重试次数
+    consumer:
+      group-id: qiong
+      max-poll-records: 500
+      enable-auto-commit: true
+      auto-commit-interval: 2000
+    listener:
+      missing-topics-fatal: false
+      # manual 当 poll 下来的所有消息完成后，执行手动提交
+      # manual_immediate 每一条消息完成后，执行手动提交就立即提交，属于立即提交
+      # ack-mode: manual_immediate
+
+logging:
+  level:
+    com.van.lily: error
+
+mybatis-plus:
+  configuration:
+    # 是否打开 MYBATIS 日志
+    # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

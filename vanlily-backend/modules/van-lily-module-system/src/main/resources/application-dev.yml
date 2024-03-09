@@ -1,0 +1,21 @@
+
+server:
+  port: 9093
+
+spring:
+  datasource:
+    url: jdbc:mysql://42.192.15.218:3306/vanlily?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: qiong
+    password: qiong
+  redis:
+    host: 42.192.15.218
+    port: 6379
+
+logging:
+  level:
+    com.van.lily: error
+
+mybatis-plus:
+  configuration:
+    # 是否打开 MYBATIS 日志
+    # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

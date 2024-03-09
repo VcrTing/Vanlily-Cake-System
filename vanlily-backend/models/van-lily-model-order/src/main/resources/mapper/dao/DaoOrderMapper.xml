@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.van.lily.model.order.mapper.dao.DaoOrderMapper">
+
+    <sql id="tableMe">ord_order as me</sql>
+    <sql id="columnsMe">
+        me.id as me_id, me.article_number as me_article_number, me.published as me_published, me.cashier_id as me_cashier_id,
+              me.be_from as me_be_from, me.type_take as me_type_take, me.date_over as me_date_over, me.uuid as me_uuid,
+              me.status_send as me_status_send, me.status_make as me_status_make, me.status_life as me_status_life,
+              me.is_fill as me_is_fill, me.is_paid as me_is_paid, me.is_check_complete as me_is_check_complete,
+              me.price_generate as me_price_generate, me.price_paid as me_price_paid, me.charge_checkout as me_charge_checkout,
+              me.remarks as me_remarks, me.products as me_products, me.payments as me_payments, me.discounts as me_discounts, me.refund as me_refund,
+              me.charge_checkout as me_charge_checkout, me.checking_end_time as me_checking_end_time, me.is_over as me_is_over
+    </sql>
+    <sql id="tableUser">sys_user as one on me.cashier_id=one.id</sql>
+    <sql id="columnsUser">
+        one.id as one_id, one.name as one_name, one.phone as one_phone
+    </sql>
+    <sql id="tableCustomer">cus_customer as two on me.customer_id=two.id</sql>
+    <sql id="columnsCustomer">
+        two.id as two_id, two.name as two_name, two.phone as two_phone, two.nickname as two_nickname
+    </sql>
+    <sql id="tableDelivery">dvr_delivery as three on three.order_id=me.id</sql>
+    <sql id="columnsDelivery">
+        three.id as three_id, three.type_take as three_type_take, three.is_delay as three_is_delay,
+                 three.receive_name as three_receive_name, three.receive_phone as three_receive_phone,
+                 three.receive_content_1 as three_receive_content_1, three.receive_content_2 as three_receive_content_2,
+                 three.newest_arrive_time as three_newest_arrive_time, three.is_in_delivery as three_is_in_delivery
+    </sql>
+
+    <resultMap id="multiResult" type="com.van.lily.model.order.dao.order.DaoOrder">
+        <id property="id" column="me_id"/>
+        <result column="me_charge_checkout" property="charge_checkout" />
+        <result column="me_checking_end_time" property="checking_end_time" />
+        <result column="me_is_over" property="is_over" />
+        <result column="me_uuid" property="uuid" />
+        <result column="me_is_fill" property="is_fill" />
+        <result column="me_cashier_id" property="cashier_id" />
+        <result column="me_published" property="published" />
+        <result column="me_article_number" property="article_number" />
+        <result column="me_be_from" property="be_from" />
+        <result column="me_type_take" property="type_take" />
+        <result column="me_date_over" property="date_over" />
+        <result column="me_status_send" property="status_send" />
+        <result column="me_status_make" property="status_make" />
+        <result column="me_status_life" property="status_life" />
+        <result column="me_is_paid" property="is_paid" />
+        <result column="me_is_check_complete" property="is_check_complete" />
+        <result column="me_price_generate" property="price_generate" />
+        <result column="me_price_paid" property="price_paid" />
+        <result column="me_charge_checkout" property="charge_checkout" />
+        <result column="me_remarks" property="remarks" />
+        <result column="me_products" property="products" />
+        <result column="me_payments" property="payments" />
+        <result column="me_discounts" property="discounts" />
+        <result column="me_refund" property="refund" />
+
+        <association property="cashier" javaType="com.van.lily.model.system.entity.User">
+            <id property="id" column="one_id"/>
+            <result property="name" column="one_name"/>
+            <result property="phone" column="one_phone"/>
+        </association>
+        <association property="customer" javaType="com.van.lily.model.system.entity.Customer">
+            <id property="id" column="two_id"/>
+            <result property="name" column="two_name"/>
+            <result property="phone" column="two_phone"/>
+        </association>
+        <association property="delivery" javaType="com.van.lily.model.order.entity.Delivery">
+            <id property="id" column="three_id"/>
+            <result property="type_take" column="three_type_take"/>
+            <result property="is_delay" column="three_is_delay"/>
+            <result property="receive_name" column="three_receive_name"/>
+            <result property="receive_phone" column="three_receive_phone"/>
+            <result property="receive_content_1" column="three_receive_content_1"/>
+            <result property="receive_content_2" column="three_receive_content_2"/>
+            <result property="newest_arrive_time" column="three_newest_arrive_time"/>
+            <result property="is_in_delivery" column="three_is_in_delivery"/>
+        </association>
+    </resultMap>
+
+        <select id="multiDeep" resultMap="multiResult">
+            SELECT <include refid="columnsMe" />,<include refid="columnsUser" />,<include refid="columnsCustomer" />,<include refid="columnsDelivery" />
+            FROM <include refid="tableMe"/>
+            LEFT JOIN <include refid="tableUser"/>
+            LEFT JOIN <include refid="tableCustomer"/>
+            LEFT JOIN <include refid="tableDelivery"/>
+            ${ ew.customSqlSegment }
+        </select>
+        <select id="oneDeep" resultMap="multiResult">
+            SELECT <include refid="columnsMe" />,<include refid="columnsUser" />,<include refid="columnsCustomer" />,<include refid="columnsDelivery" />
+            FROM <include refid="tableMe"/>
+            LEFT JOIN <include refid="tableUser"/>
+            LEFT JOIN <include refid="tableCustomer"/>
+            LEFT JOIN <include refid="tableDelivery"/>
+            WHERE me.id = #{id}
+        </select>
+    </mapper>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="15b9c17b-f89e-4585-b7c3-6877dc1142f6" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ayPO8pjPnaHJKkqjzDyTpT7b5j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "zulu-1.8",
+    "last_opened_file_path": "/Users/zengyingqiong/JAVAS/SpringBoot/MY_PROJECT/VANLILY-CAKE/vanlily-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "spring.configuration.checksum": "73037235bc37ecfe6ce8170b4257be57",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/van-lily-module-system/src/main/resources" />
+      <recent name="$PROJECT_DIR$/van-lily-commons/src/main/java/com/van/lily/commons/utils/define" />
+      <recent name="$PROJECT_DIR$/modules/van-lily-module-product/src/main/java/com/van/lily/module/product" />
+      <recent name="$PROJECT_DIR$/modules/van-lily-module-product/src/main/resources" />
+      <recent name="$PROJECT_DIR$/models/van-lily-model-system/src/main/java/com/van/lily/model/system/define" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules" />
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.van.lily.model.order.front.group" />
+      <recent name="com.van.lily.commons.keys.queue" />
+      <recent name="com.van.lily.module.order.work.queue" />
+      <recent name="com.van.lily.commons.core.exception" />
+      <recent name="com.van.lily.access.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.App">
+    <configuration name="TableGeneratorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.lily.extend.generator.sql.TableGeneratorApp" />
+      <module name="van-lily-extend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.lily.extend.generator.sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest.stringOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="van-lily-extend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.lily.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.van.lily.base" />
+      <option name="MAIN_CLASS_NAME" value="com.van.lily.base.StringTest" />
+      <option name="METHOD_NAME" value="stringOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="van-lily-module-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.van.lily.module.product.App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.lily.module.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="van-lily-module-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.van.lily.module.system.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="van-lily-module-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.van.lily.module.order.App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.lily.module.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Application.TableGeneratorApp" />
+        <item itemvalue="Spring Boot.App (1)" />
+        <item itemvalue="JUnit.StringTest.stringOne" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15b9c17b-f89e-4585-b7c3-6877dc1142f6" name="Changes" comment="" />
+      <created>1705287811979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705287811979</updated>
+      <workItem from="1705287813351" duration="28582000" />
+      <workItem from="1705391417742" duration="54676000" />
+      <workItem from="1705631126248" duration="16946000" />
+      <workItem from="1705742184225" duration="78703000" />
+      <workItem from="1706149184702" duration="8134000" />
+      <workItem from="1706166210571" duration="6000" />
+      <workItem from="1706166237349" duration="31234000" />
+      <workItem from="1706421353423" duration="15444000" />
+      <workItem from="1706500451655" duration="15996000" />
+      <workItem from="1706536532780" duration="10625000" />
+      <workItem from="1706614510810" duration="11350000" />
+      <workItem from="1706687258810" duration="1808000" />
+      <workItem from="1708837098632" duration="7314000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

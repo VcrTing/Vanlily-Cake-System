@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>vanlily-cake</artifactId>
+        <groupId>com.van.lily</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>van-lily-module-order</artifactId>
+
+    <dependencies>
+        <!-- 模型层 -->
+        <dependency>
+            <groupId>com.van.lily</groupId>
+            <artifactId>van-lily-model-order</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.van.lily</groupId>
+            <artifactId>van-lily-model-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.van.lily</groupId>
+            <artifactId>van-lily-model-product</artifactId>
+        </dependency>
+
+        <!-- 基础设备 -->
+        <dependency>
+            <groupId>com.van.lily</groupId>
+            <artifactId>van-lily-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.van.lily</groupId>
+            <artifactId>van-lily-framework</artifactId>
+        </dependency>
+
+        <!-- 内容 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.1.RELEASE</version>
+                <configuration>
+                    <!-- 如果没有该配置，devtools不会生效 -->
+                    <fork>true</fork>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <warName>${project.artifactId}</warName>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>${parent.artifactId}</finalName>
+    </build>
+</project>

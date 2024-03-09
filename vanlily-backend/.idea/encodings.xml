@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/models/van-lily-model-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/van-lily-model-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/van-lily-model-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/van-lily-model-product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/van-lily-model-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/van-lily-model-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/van-lily-module-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/van-lily-module-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/van-lily-module-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/van-lily-module-product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/van-lily-module-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/van-lily-module-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-access/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-access/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-extend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-extend/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-module-order-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/van-lily-module-order-model/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
